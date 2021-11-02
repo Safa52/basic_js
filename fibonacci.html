@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function fibonacci(num) {
+    if(num < 2) {
+        return num;
+    }
+    else {
+        return fibonacci(num-1) + fibonacci(num - 2);
+    }
+}
+
+function display()
+{
+const nTerms = document.getElementById("text1").value;
+
+
+    for(let i = 0; i < nTerms; i++) {
+        document.write(fibonacci(i)+ " ");
+}
+}
+</script>
+
+</head>
+<body>
+Enter a number:<input type="text" id="text1"></input>
+
+<input type="button" id="button1" value="Display" onclick="display();"></input>
+<div id="Result"></div>
+</body>
+</html>

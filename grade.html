@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function myFunction() {
+          var t1 = document.getElementById("g1").value;
+          var t2 = document.getElementById("g2").value;
+          var t3 = document.getElementById("g3").value;
+          x = parseInt(t1);
+          y = parseInt(t2);
+          z = parseInt(t3);
+          var sum=x+y+z;
+
+
+          switch (true) {
+
+            case sum >= 90:
+            var grade="A";
+            document.write("Grade is "+grade)
+                break;
+
+            case sum >= 80:
+            var grade="B";
+            document.write("Grade is "+grade)
+                break;
+
+            case sum >= 70:
+            var grade="C";
+              document.write("Grade is "+grade)
+                break;
+
+            case sum >= 60:
+            var grade="D";
+              document.write("Grade is "+grade)
+                break;
+
+            case sum < 60:
+            var grade="F";
+            document.write("Grade is "+grade)
+                break;
+
+
+        }
+
+        }
+        </script>
+        </head>
+<body>
+ISA1 marks: <input type="text" id="g1" ></input>
+ISA2 marks: <input type="text" id="g2" ></input>
+ESA marks: <input type="text" id="g3" ></input>
+
+
+<input type="button" id="button2" value="Find grade" onclick="myFunction();"></input>
+<p id="demo"></p>
+
+
+
+</body>
+</html>
